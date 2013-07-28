@@ -4,7 +4,11 @@ class main extends api
 {
   protected function Reserve()
   {
-    return array("error" => "Test function call");
+    return array(
+    //  "error" => "Test function call",
+    // If any error returns - all execution breaks.
+      "design" => "simple"
+      );
   }
   
   protected function _Protected()
