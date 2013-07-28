@@ -1,0 +1,4 @@
+function EntryPoint()
+{
+  alert('WOW');
+}

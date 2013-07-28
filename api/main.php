@@ -12,6 +12,10 @@ class main extends api
       "data" => array(
         "escaped" => htmlentities("<ALMOST DANGEROUS><iframe></iframe></ALMOST>"),
         "unescaped" => "<b>Hey baby! Hacked!</b>".time())
+      ,
+      "script" => array("js/main")
+      ,
+      "routeline" => "EntryPoint"
       );
   }
   
