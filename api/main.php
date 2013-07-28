@@ -8,6 +8,10 @@ class main extends api
     //  "error" => "Test function call",
     // If any error returns - all execution breaks.
       "design" => "simple"
+      ,
+      "data" => array(
+        "escaped" => htmlentities("<ALMOST DANGEROUS><iframe></iframe></ALMOST>"),
+        "unescaped" => "<b>Hey baby! Hacked!</b>".time())
       );
   }
   
