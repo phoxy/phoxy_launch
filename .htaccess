@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
+RewriteRule ^api/(.*)$ index.php?api=$1 [L,QSA]
 RewriteRule ^phoxy.js$ phoxy/phoxy.js [L,QSA]
 RewriteRule ^libs/(.*)$ phoxy/libs/$1 [L,QSA]
 </IfModule>
