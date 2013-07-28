@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^phoxy.js$ phoxy/phoxy.js [L,QSA]
+RewriteRule ^libs/(.*)$ phoxy/libs/$1 [L,QSA]
+</IfModule>
