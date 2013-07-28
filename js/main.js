@@ -1,4 +1,4 @@
 function EntryPoint()
 {
-  alert('WOW');
+  alert("Server time loaded from dynamicly div content! " + $('#time').html());
 }

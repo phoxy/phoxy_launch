@@ -11,7 +11,9 @@ class main extends api
       ,
       "data" => array(
         "escaped" => htmlentities("<ALMOST DANGEROUS><iframe></iframe></ALMOST>"),
-        "unescaped" => "<b>Hey baby! Hacked!</b>".time())
+        "unescaped" => "<b>Hey baby! Hacked!</b>".time(),
+        "servertime" => time()
+        )
       ,
       "script" => array("js/main")
       ,
